@@ -13,7 +13,7 @@ local calls = {}
 --------------------------------
 -- SET YOUR WEHBOOKS IN HERE
 -- Images for mug shots will be uploaded here. Add a Discord webhook. 
-local MugShotWebhook = ''
+local MugShotWebhook = 'https://discord.com/api/webhooks/1194520870098575420/-HNUgS1Uk0gH9fsoiEnXXxSwGaYAZaAnAwfugyxCoQU6lu4NxSUrDsJ1rEMm4LmFjO_j'
 
 -- Clock-in notifications for duty. Add a Discord webhook.
 -- Command /mdtleaderboard, will display top players per clock-in hours.
