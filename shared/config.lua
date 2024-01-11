@@ -22,7 +22,7 @@ Config.QBBankingUse = true
 Config.InventoryForWeaponsImages = "qb-inventory"
 
 -- "LegacyFuel", "lj-fuel", "ps-fuel"
-Config.Fuel = "LegacyFuel"
+Config.Fuel = "ps-fuel"
 
 -- Google Docs Link
 Config.sopLink = {
