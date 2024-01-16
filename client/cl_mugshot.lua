@@ -185,7 +185,8 @@ RegisterNetEvent('cqc-mugshot:client:trigger', function()
             ClearPedSecondaryTask(GetPlayerPed(ped))
         end
            TriggerServerEvent('psmdt-mugshot:server:MDTupload', playerData.citizenid, MugshotArray)
-        mugshotInProgress = false
+           TriggerEvent('wais:addmissionxp:mugshot', 1) -- added by pamela for wais battlepass
+        mugshotInProgress = false 
     end)
 end)
 
@@ -209,6 +210,7 @@ RegisterNUICallback("sendToJail", function(data, cb)
                 Citizen.Wait(5000)
                 -- Uses qb-policejob JailPlayer event
                 TriggerServerEvent("police:server:JailPlayer", targetSourceId, sentence)
+                TriggerEvent('wais:addmissionxp:jail', 1) -- added by pamela for wais battlepass
             end
         end
     end)
