@@ -54,6 +54,7 @@ local function TakeOutImpound(vehicle)
                 exports[Config.Fuel]:SetFuel(veh, vehicle.fuel)
                 doCarDamage(veh, vehicle)
                 TriggerServerEvent('police:server:TakeOutImpound',vehicle.plate)
+				TriggerEvent('wais:addmissionxp:impound', 1) -- added by pamela for wais battlepass
                 TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
                 SetVehicleEngineOn(veh, true, true)
             end, vehicle.plate)
